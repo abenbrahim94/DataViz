@@ -94,3 +94,29 @@ new Chart(document.getElementById('CanadaVsRestOfWorld'),{
     }
     
 });
+
+new Chart(document.getElementById('mostMedals'), {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Six Medals', 'Five Medals', 'Four Medals', 'Three Medals', 'Two Medals', 'One Medal'],
+        datasets: [
+        {
+            label: 'Number Of Athletes (# Of Medals Won)',
+            data: ['1', '4', '10', '18', '65', '375'],
+            backgroundColor: 'gold'     
+        }
+    ]
+    },
+    options: {
+    scales: {
+        yAxes: [{
+            display: true
+        }],
+        xAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
+}
+});
